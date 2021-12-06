@@ -1,0 +1,166 @@
+:root {
+  ---color-primary: #3B29CC;
+  --color-text: #2c3e50;
+  --shadow-1: 0 2rem 5rem rgba(0,0,0,0.06);
+  --shadow-2: 0 2rem 6rem rgba(0,0,0,0.3);
+  --border-radius: 4px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: var(--color-text);
+}
+
+li, ul {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 70vw;
+  height: 80vh;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  padding: 3rem;
+}
+
+.recording_container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 9rem;
+}
+
+.recording_graph {
+  width: 90%;
+  height: 80%;
+  box-shadow: var(--shadow-1);
+  position: relative;
+  cursor: pointer;
+}
+
+.recording_audio_scrubber {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 5px;
+  background-color: var(---color-primary);
+  border-radius: var(--border-radius);
+  cursor: grab;
+  left: 0%;
+  transition: transform .3s ease;
+}
+
+.recording_audio_scrubber:active {
+  cursor: grabbing;
+}
+
+.recording_audio_scrubber:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: calc(var(--border-radius));
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  border: 2px solid var(---color-primary);
+  transition: transform .3s ease;
+}
+
+.participants_container {
+  padding: 2rem;
+  width: 90%;
+  height: 55rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  box-shadow: var(--shadow-1);
+  display: flex;
+}
+
+.participants_details {
+  width: 30%;
+}
+
+.participants_timelines {
+  width: 70%;
+  position: relative;
+}
+
+.participants_timelines::before, .participants_timelines:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.participants_timelines::before {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  top: -2%;
+  left: var(--dx, 0);
+  background-color: var(---color-primary);
+  transform: translate(-39%, -50%);
+  transition: var(--transition, 'none');
+}
+
+.participants_timelines:after {
+  height: 102%;
+  width: 2px;
+  background-color: var(---color-primary);
+  /* border-radius: var(--border-radius); */
+  top: -2%;
+  left: var(--dx, 0);
+  transition: var(--transition, 'none');
+}
+
+.participant_detail {
+  height: 5rem;
+  padding: 1rem 2rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.participant_name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.participant_timeline {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.timeline_bar {
+  width: 100%;
+  height: 10px;
+  border-radius: var(--border-radius);
+  background-color: #ecf0f1;
+  position: relative;
+}
+
+.timeline_bar div {
+  position: absolute;
+  height: 100%;
+  border-radius: var(--border-radius);
+}
