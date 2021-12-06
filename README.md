@@ -8,3 +8,8 @@
 ### Screenshot
 
 <img width="1464" alt="Screenshot 2021-12-06 at 19 17 29" src="https://user-images.githubusercontent.com/26146760/144857159-059da370-538d-474b-987a-4f596a3b4a15.png">
+
+### Video
+
+https://user-images.githubusercontent.com/26146760/144858281-83332bc2-b4b5-4f11-8a6a-a8b25583af50.mov
+
