@@ -3,7 +3,7 @@
 ### Visit [Live URL](https://callparticipants.netlify.app/)
 
 1. Interact with the call participant timeline using a scrubber.
-2. Built for [sellular](https://www.sellular.com) Multi Party call. [Sample UI](https://d33wubrfki0l68.cloudfront.net/e2d8f4692a2c2b4610a393c5040e5d0d9955a703/0cd1c/assets/images/selluar-hero-unit.svg)
+2. Built for [sellular](https://www.sellular.com) Multi Party call. [Sample UI 1](https://d33wubrfki0l68.cloudfront.net/e2d8f4692a2c2b4610a393c5040e5d0d9955a703/0cd1c/assets/images/selluar-hero-unit.svg), [Sample UI 2](https://www.sellular.com/assets/images/home/Asset%204.svg)
 
 ### Screenshot
 
